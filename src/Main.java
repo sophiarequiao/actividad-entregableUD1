@@ -3,7 +3,8 @@ import java.text.DecimalFormat;
 public class Main {
     public static void main(String[] args) {
 
-        //creacion de variable para formatear todos los double para que tengan 2 casas decimales
+        /* Creacion de variable para formatear todos los double para que tengan 2 casas decimales
+         Se pasa como argumentos en los ejercicios que hay que hacer el formateo*/
         DecimalFormat df = new DecimalFormat("#.##");
 
         System.out.println("\n--------- EJERCICIO 1 -----------");
@@ -22,6 +23,7 @@ public class Main {
         ejercicio5(df);
     }
 
+    // Ese ejercicio enseña las informaciones de los vehiculos de la empresa
     public static void ejercicio1(){
         //Informaciones del coche
         String modeloCoche = "Citroen C3";
@@ -66,8 +68,8 @@ public class Main {
         );
     }
 
+    // Ese ejercicio imprime los ingresos totales de un dia dado una cantidad de cada tipo de vehiculo
     public static void ejercicio2(DecimalFormat df){
-
         // Cantidades de cada tipo
         int cantidadCoches = 7;
         int cantidadMotos = 10;
@@ -98,6 +100,7 @@ public class Main {
         System.out.println("Ingresos totales del día: " + df.format(ingresosTotales) + " €");
     }
 
+    // Ese ejercicio calcula el precio con descuento de un tipo de vehiculo, dada la cantidad de alquilados en un dia
     public static void ejercicio3(DecimalFormat df){
         // Cantidad de coches alquilados
         int cantidadCoches = 7;
@@ -123,6 +126,7 @@ public class Main {
 
     }
 
+    //Ese ejercicio calcula el precio medio de los vehiculos disponibles en la empresa
     public static void ejercicio4(DecimalFormat df){
         // Precios de cada vehiculo
         double precioDiarioCoche = 151.96;
@@ -137,6 +141,7 @@ public class Main {
         System.out.println("Precio medio: " + df.format(precioMedio) + " €");
     }
 
+    //Ese ejercicio calcula la porcentaje de vehiculos alquilados de cada tipo, dado el numero total de vehiculos alquilados
     public static void ejercicio5(DecimalFormat df){
         // Cantidades de cada vehiculo
         int cantidadCoches = 7;
